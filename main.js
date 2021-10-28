@@ -4,7 +4,6 @@ const prompt = Prompt();
 const gameState = {
     isPlaying: true,
     rounds: 1,
-    message: '',
     mode: 'counting', // [counting, random]
     stopPlaying() {
         this.isPlaying = false;
@@ -37,7 +36,7 @@ function getInput() {
         } else {
             input = prompt('Keep counting? [o] ok | [q] quit: ');
         }
-    } else {
+    } else { // mode == 'random'
         input = prompt('new random Number? [o] ok | [q] quit: ');
     }
     return input; // return the user input String
@@ -56,7 +55,7 @@ function handleInput(input) {
     // all other case: continue playing ...    
 }
 
-
+// --- Main Game Loop
 while (gameState.isPlaying) {
     // check gameState and show output (render)
     render();
