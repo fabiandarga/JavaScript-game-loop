@@ -6,3 +6,7 @@ So ist der Ablauf in diesem einfachen Beispiel:
 2. input sammeln (Benutzer-Input abfragen)
 3. gamestate update (Benutzer-Input auswerten und Gamestate updaten)
 ![alt text](./images/game_loop_diagram.png)
+
+## Installation + Ausführen
+1. npm install (im Terminal im Projekt)
+2. node main.js
